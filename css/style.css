@@ -1,0 +1,737 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Work Sans",sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 320px) {
+    .container{
+        width: 10px;
+    }
+}
+@media (min-width: 300px) {
+    .container{
+        width: 300px;
+    }
+}
+@media (min-width: 520px) {
+    .container{
+        width: 500px;
+    }
+}
+@media (min-width: 768px) {
+    .container{
+        width: 745px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/*Header section */
+header{
+    background-color: #393839;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+}
+header .container .logo i{
+    color: red;
+    font-size: 40px;
+}
+header .container .logo p{
+    color: wheat;
+    font-weight: bold;
+    font-size: 15px;
+}
+header a{
+    color: #efffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px black;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s;
+}
+header a::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: white;
+    transition: all 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+header a:hover::after{
+    width: 100%;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.m-services ul li{
+    padding-left: 140px;
+}
+ul{
+    list-style-type: none;
+    display: inline-block;
+}
+li{
+    display: inline-block;
+}
+/*End Header section */
+/*Start Main Section */
+main{
+    display: block;
+    width: 100%;
+    padding-top: 100px;
+    height: 100%;
+    padding-top: 100px;
+    background-image: url("../images/bgg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main .container{
+    display: grid;
+    padding: 30px;
+    padding-left: 20px;
+    margin-left: 50px;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 40px;
+}
+main .container .part1 button{
+    background-color: #d3191f;
+    color: white;
+    padding: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 60px 10px 5px 5px;
+    border-radius: 15px;
+    transition: all 0.2s;
+}
+main .container .part1 button:hover{
+    transform: scale(1.09);
+    background-color: #393839;
+}
+main .container .part1 p{
+    font-size: 25px;
+    margin-top: 50px;
+    text-align: left;
+    color: white;
+    font-family:'Roboto', sans-serif;;
+}
+main .container .part1 h2{
+    font-size: 150px;
+    color: #d3191f;
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+main .container .part2 img{
+    margin-left: 155px;
+    margin-top: 0px;
+    width: 110%;
+}
+@media (max-width: 1500px) {
+    main .container{
+        grid-template-columns: repeat(auto-fill,minmax(440px,1fr));
+    }
+    main .container .part2 img {
+        max-width: 90%;
+        margin: 0;
+    }
+ }
+ @media (max-width: 1100px) {
+    main .container{
+        margin-left: 20px;
+    }
+    main .container .part2 img {
+        max-width: 90%;
+        margin: 0;
+    }
+ }
+@media (max-width: 992px) {
+    main .container{
+        grid-template-columns: repeat(auto-fill,minmax(440px,1fr));
+    }
+    main .container .part1 h2{
+        font-size: 120px;
+    }
+    main .container .part1 p{
+        font-size: 20px;
+        width: 50%;
+    }
+    main .container .part2 img {
+        display: none;
+        max-width: 100%;
+        margin: 0;
+    }
+ }
+@media (max-width: 768px) {
+    main .container{
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+    main .container .part2 img {
+        display: none;
+    }
+    main .container .part1 h2{
+        font-size: 180px;
+        text-align: center;
+    }
+    main .container .part1 p{
+        font-size: 19px;
+        width: 50%;
+    }
+    }
+@media (max-width: 520px) {
+    main .container{
+        display: block;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    main .container .part2 img {
+       display: none;
+    }
+    main .container .part1 h2{
+        font-size: 117px;
+        text-align: center;
+    }
+    main .container .part1 p{
+        font-size: 18px;
+        text-align: center;
+        width: 90%;
+    }
+    }
+@media (max-width: 300px) {
+    main .container{
+        display: block;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    main .container .part2 img {
+       display: none;
+    }
+    main .container .part1 h2{
+        font-size: 117px;
+        text-align: center;
+    }
+    main .container .part1 p{
+        font-size: 18px;
+        text-align: center;
+        width: 90%;
+    }
+    }
+/*End Main Section */
+/*Start About Section */
+.about{
+  display: block;
+  height: 100%;
+    background-image: url("../images/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .container .herotext{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+.about .container .mini-about img{
+    max-width: 85%;
+    box-shadow: 5px 0.6px 13px -4.6px black;
+}
+.about .container .mini-about{
+    display: grid;
+    background-color: #393e46eb;
+    padding: 50px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
+    gap: 30px;
+}
+.about .container .mini-about p {
+    border-top: 3px solid black;
+    padding-top: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 2;
+    border-bottom: 3px solid black;
+}
+@media (max-width: 1500px) {
+    .about .container .mini-about img{
+        max-width: 80%;
+    }
+    .about .container .mini-about{
+        grid-template-columns: repeat(auto-fill,minmax(405px,1fr));
+    }
+    .about .container .mini-about p {
+        padding: 15px;
+        font-size: 15.5px;
+    }
+}
+@media (max-width: 992px) {
+    .about .container .mini-about img{
+        max-width: 90%;
+    }
+    .about .container .mini-about{
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    }
+    .about .container .mini-about p {
+        padding: 0px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 768px) {
+    .about .container .mini-about{
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    }
+    .about .container .mini-about img{
+        display: none;
+    }
+    .about .container .mini-about p {
+        padding: 15px;
+        font-size: 13.5px;
+    }
+    }
+@media (max-width: 520px) {
+    .about .container .mini-about img{
+        display: none;
+    }
+    .about .container .mini-about p {
+        padding: 32px;
+        width: 423px;
+        font-size: 16px;
+    }
+    .about .container .mini-about{
+        padding: 20px;
+    }
+        }
+@media (max-width: 300px) {
+    .about .container .mini-about img{
+        display: none;
+    }
+    .about .container .mini-about p {
+        padding: 32px;
+        width: 423px;
+        font-size: 16px;
+    }
+    .about .container .mini-about{
+        padding: 20px;
+    }
+}
+/*End About Section */
+/*Start Services Section */
+.services{
+    padding-top: 40px;
+}
+.services .container{
+    margin-bottom: 100px;
+}
+.services .container .mini-services {
+    margin-top: 50px;
+}
+.services .container .herotext h1{
+    font-size: 50px;
+    color: #f0652b;
+    text-align: center;
+    font-weight: bold;
+}
+.services .container .herotext h2{
+    margin-top: 25px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.services .container .herotext p{
+    margin-top: 13px;
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+.services .container .mini-services{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    padding: 20px;
+}
+.services .container .mini-services .col1,
+.services .container .mini-services .col2,
+.services .container .mini-services .col3,
+.services .container .mini-services .col4,
+.services .container .mini-services .col5,
+.services .container .mini-services .col6{
+    background-color: #ffff;
+    width: fit-content;
+    box-shadow: 3px 3px 15px -5px black;
+    padding: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.services .container .mini-services .col1:hover,
+.services .container .mini-services .col2:hover,
+.services .container .mini-services .col3:hover,
+.services .container .mini-services .col4:hover,
+.services .container .mini-services .col5:hover,
+.services .container .mini-services .col6:hover{
+    background-color: #f0652b;
+}
+.services .container .mini-services .col1:hover i,
+.services .container .mini-services .col2:hover i,
+.services .container .mini-services .col3:hover i,
+.services .container .mini-services .col4:hover i,
+.services .container .mini-services .col5:hover i,
+.services .container .mini-services .col6:hover i{
+    color: white;
+}
+.services .container .mini-services .col1:hover h4,
+.services .container .mini-services .col2:hover h4,
+.services .container .mini-services .col3:hover h4,
+.services .container .mini-services .col4:hover h4,
+.services .container .mini-services .col5:hover h4,
+.services .container .mini-services .col6:hover h4{
+    color: white;
+}
+.services .container .mini-services .col1:hover p,
+.services .container .mini-services .col2:hover p,
+.services .container .mini-services .col3:hover p,
+.services .container .mini-services .col4:hover p,
+.services .container .mini-services .col5:hover p,
+.services .container .mini-services .col6:hover p{
+    color: white;
+}
+.services .container .mini-services .col1:hover a,
+.services .container .mini-services .col2:hover a,
+.services .container .mini-services .col3:hover a,
+.services .container .mini-services .col4:hover a,
+.services .container .mini-services .col5:hover a,
+.services .container .mini-services .col6:hover a{
+    color: white;
+}
+.services .container .mini-services i{
+    font-size: 50px;
+    color: #f0652b;
+    padding: 20px;
+}
+.services .container .mini-services h4{
+    font-size: 25px;
+    padding: 20px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.services .container .mini-services p{
+    font-size: 19px;
+    color: #a1aac2;
+    transition: all 0.3s;
+    cursor: pointer;
+    padding: 15px;
+}
+.services .container .mini-services a{
+    font-size: 15px;
+    padding: 25px;
+    color: #f0652b;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+/*End Services Section*/
+/*Start How it works section */
+.how{
+    padding-top: 80px;
+    height: fit-content;
+    background-image: url("../images/e.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    background-color: rgba(255,255,255,0.2);
+    background-blend-mode: lighten;
+}
+.how .container .herotext h1{
+    font-size: 50px;
+    color: #f0652b;
+    text-align: center;
+    font-weight: bold;
+}
+.how .container .herotext h2{
+    margin-top: 25px;
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+.how .container .herotext p{
+    margin-top: 13px;
+    font-size: 18px;
+    color: grey;
+    text-align: center;
+}
+.how .container .mini-how{
+    display: grid;
+    margin-top: 65px;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap: 40px;
+}
+.how .container .mini-how .col1,
+.how .container .mini-how .col2,
+.how .container .mini-how .col3,
+.how .container .mini-how .col4{
+    background-color: #ffff;
+    width: fit-content;
+    box-shadow: 3px 3px 15px -5px black;
+    padding: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.how .container .mini-how .col1:hover,
+.how .container .mini-how .col2:hover,
+.how .container .mini-how .col3:hover,
+.how .container .mini-how .col4:hover{
+    transform: scale(1.05);
+}
+.how .container .mini-how i{
+    font-size: 40px;
+    border-radius: 15px;
+    background-color: #f0652b;
+    color: white;
+    margin: 20px;
+    padding: 25px;
+}
+.how .container .mini-how h4{
+    font-size: 25px;
+    padding: 10px;
+}
+.how .container .mini-how .col1,
+.how .container .mini-how .col1,
+.how .container .mini-how .col2,
+.how .container .mini-how .col3{
+    position: relative;
+}
+.how .container .mini-how .col1::after,
+.how .container .mini-how .col1::after,
+.how .container .mini-how .col2::after,
+.how .container .mini-how .col3::after{
+    font-family: FontAwesome;
+    content: "\f101";
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+}
+@media (max-width: 1100px) {
+    .how .container .mini-how .col1::after,
+.how .container .mini-how .col1::after,
+.how .container .mini-how .col2::after,
+.how .container .mini-how .col3::after{
+    display: none;
+}
+.how{
+    padding: 20px;
+}
+    }
+@media (max-width: 768px) {
+    .how .container .mini-how .col1::after,
+.how .container .mini-how .col1::after,
+.how .container .mini-how .col2::after,
+.how .container .mini-how .col3::after{
+    font-size: 32px;
+    left: 82%;
+}
+.how{
+    padding: 20px;
+}
+    }
+@media (max-width: 520px) {
+    .how{
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    }
+@media (max-width: 300px) {
+    .how{
+        padding: 0px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    }
+/*End How it works section */
+/*Start Contact section */
+.contact{
+    height: 100%;
+}
+.contact .container{
+    display: grid;
+    padding-top: 100px;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    gap: 30px;
+}
+.contact .container .form form label{
+    margin: 5px;
+    padding: 10px;
+    display: block;
+}
+.contact .container .form form input{
+    border: 1px lightgray solid;
+    padding: 30px;
+    width: 80%;
+    margin: 10px 15px;
+    border-radius: 10px;
+}
+.contact .container .form form input[Placeholder]{
+    padding-left: 15px;
+}
+.contact .container .form{
+    height: 105%;
+    box-shadow: 3px 3px 15px -5px black;
+}
+.contact .container .cnt{
+    margin-top: 60px;
+}
+.contact .container .cnt h4{
+    color: #f0652b;
+    text-align: left;
+    padding: 10px;
+    font-size: 26px;
+}
+.contact .container .cnt h1{
+    padding: 10px;
+    text-align: left;
+    font-size: 35px;
+}
+.contact .container .cnt p{
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+}
+.contact .container .cnt .details .location,
+.contact .container .cnt .details .phone,
+.contact .container .cnt .details .email{
+    width: fit-content;
+}
+.contact .container .cnt .details{
+    display: grid;
+    gap: 30px;
+    margin: 15px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+.contact .container .form p {
+    font-size: 25px;
+    padding: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.contact .container .form #sub {
+    max-width: 100%;
+    background-color: #f0652b;
+    color: white;
+    padding: 24px;
+    margin-left: 40px;
+    margin-right: auto;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.contact .container .form #sub:hover{
+    transform: scale(1.06);
+    background-color: #393839;
+}
+.contact .container .cnt .details i {
+    background-color: #f0652b;
+    color: white;
+    padding: 20px;
+}
+.contact .container .cnt .details h5{
+    display: inline-block;
+    width: fit-content;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contact .container .cnt .socials{
+    margin: 15px;
+    font-size: 25px;
+    text-align: center;
+}
+.contact .container .cnt .socials i {
+    background-color: #f0652b;
+    color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.contact .container .cnt .socials i:hover{
+    transform: scale(1.05);
+}
+.contact .container .map iframe{
+    padding: 15px;
+    margin: 18px;
+    display: block;
+}
+@media (max-width: 1500px) {
+    .contact .container .map iframe{
+        width: 100%;
+    }
+}
+@media (max-width: 992px) {
+    .contact .container .map iframe{
+        width: 60%;
+    }
+    .contact .container .cnt p {
+        font-size: 17px;
+    }
+}
+@media (max-width: 768px) {
+    .contact .container .map iframe{
+        width: 100%;
+    }
+    .contact .container .cnt .details {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+}
+@media (max-width: 520px) {
+    .contact .container .map iframe{
+        width: 90%;
+    }
+    .contact .container {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+}
+@media (max-width: 300px) {
+    .contact .container .map iframe{
+        width: 90%;
+    }
+    .contact .container {
+        grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    }
+}
